@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Airrorbot — Coming Soon</title>
+    <meta name="description" content="AI와 사용자의 모든 가이드를 잇는 플랫폼, Airrorbot. Coming Soon." />
+    <meta property="og:title" content="Airrorbot — Coming Soon" />
+    <meta property="og:description" content="AI와 사용자의 모든 가이드를 잇는 플랫폼, Airrorbot. Coming Soon." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#f3c7ff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700;900&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root{
+            --fg:#6a6a78;            /* 본문 글자색 (그레이시) */
+            --fg-strong:#5a5a68;
+            --shadow: 0 6px 30px rgba(0,0,0,.10);
+        }
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{
+            margin:0;
+            color:var(--fg);
+            font-family: "Inter","Pretendard",-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Apple SD Gothic Neo,Malgun Gothic,sans-serif;
+            line-height:1.5;
+            -webkit-font-smoothing:antialiased;
+            background: #f6e8ff;
+            /* 부드러운 파스텔 멀티 그라디언트 배경 */
+            background:
+                    radial-gradient(1200px 800px at 10% 15%, rgba(158,255,241,.65), transparent 60%),
+                    radial-gradient(1000px 700px at 90% 10%, rgba(255,199,162,.70), transparent 60%),
+                    radial-gradient(1000px 900px at 10% 85%, rgba(255,173,222,.65), transparent 60%),
+                    radial-gradient(900px 700px at 90% 85%, rgba(203,173,255,.60), transparent 60%),
+                    linear-gradient(135deg, #bdf2e9 0%, #ffe0b8 35%, #f4b6f0 70%, #c7b9ff 100%);
+        }
+
+        .wrap{
+            min-height:100%;
+            display:grid;
+            grid-template-rows: 1fr auto;
+        }
+
+        main{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding:6rem 1.5rem 2rem;
+        }
+
+        .card{
+            width:min(900px, 92vw);
+            text-align:center;
+            backdrop-filter: blur(0.2px);
+        }
+
+        /* 브랜드 타이포 */
+        .brand{
+            font-weight:900;
+            letter-spacing:-0.02em;
+            font-size: clamp(48px, 9vw, 128px);
+            line-height:1.02;
+            margin:0 0 1.25rem;
+            /* 텍스트 그라디언트 */
+            background: linear-gradient(90deg,
+            #9af3ea 0%,
+            #b8f0ff 22%,
+            #ffe59e 48%,
+            #ffc3a9 65%,
+            #ffb6d7 82%,
+            #c9b7ff 100%);
+            -webkit-background-clip:text;
+            background-clip:text;
+            color:transparent;
+            text-shadow: 0 1px 0 rgba(255,255,255,.6);
+        }
+
+        .tagline{
+            font-size: clamp(18px, 2.2vw, 28px);
+            margin: 0 0 1.75rem;
+            color: var(--fg-strong);
+        }
+
+        .soon{
+            font-size: clamp(24px, 3vw, 36px);
+            font-weight:700;
+            color: var(--fg-strong);
+            margin: 0 0 3.5rem;
+        }
+
+        .contacts{
+            display:flex;
+            gap:14px;
+            align-items:center;
+            justify-content:center;
+            margin: 0 0 5.5rem;
+            flex-wrap:wrap;
+        }
+        .contacts a, .contacts span{
+            display:inline-flex;
+            align-items:center;
+            gap:.5rem;
+            font-weight:600;
+            text-decoration:none;
+            color:var(--fg-strong);
+            padding:.6rem .9rem;
+            border-radius:999px;
+            background: rgba(255,255,255,.35);
+            box-shadow: var(--shadow);
+            transition: transform .12s ease, box-shadow .12s ease, background .2s ease;
+        }
+        .contacts a:hover{
+            transform: translateY(-1px);
+            box-shadow: 0 10px 40px rgba(0,0,0,.12);
+            background: rgba(255,255,255,.55);
+        }
+        .contacts svg{width:18px;height:18px;flex:0 0 18px}
+
+        footer{
+            text-align:center;
+            padding: 0 1.5rem 2rem;
+            font-size: 16px;
+            color:#6f6f7c;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <main>
+        <section class="card" aria-label="Airrorbot Coming Soon">
+            <h1 class="brand">Airrorbot.</h1>
+
+            <p class="tagline">AI와 사용자의 모든 가이드를 잇는 플랫폼, Airrorbot.</p>
+            <p class="soon">Coming Soon.</p>
+
+            <div class="contacts">
+                <a href="mailto:contact@airrorbot.com" aria-label="이메일 보내기">
+                    <!-- mail icon -->
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z" stroke="currentColor" stroke-width="1.6" />
+                        <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" fill="none" />
+                    </svg>
+                    contact@airrorbot.com
+                </a>
+
+                <span title="we ♥ users" aria-label="we love users">
+            <!-- heart icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 21s-7.2-4.35-9.6-8.28C.9 10.17 2.08 6.9 5.22 6.2c1.86-.41 3.77.33 4.78 1.86 1.01-1.53 2.92-2.27 4.78-1.86 3.14.7 4.32 3.97 2.82 6.52C19.2 16.65 12 21 12 21z"/>
+            </svg>
+            we love users
+          </span>
+
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <!-- LinkedIn icon -->
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.84-2.05 3.78-2.05C20.2 8.65 21 11 21 14.3V21h-4v-6c0-1.43-.03-3.27-2-3.27-2 0-2.31 1.56-2.31 3.17V21H9z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2024. All rights reserved.
+    </footer>
+</div>
+</body>
+</html>
