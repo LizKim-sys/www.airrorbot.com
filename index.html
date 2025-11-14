@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>AIrrorbot – 깨지지 않는 거울</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/png">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -109,6 +110,21 @@
             font-size: 18px;
             margin-bottom: 8px;
             color: #111827;
+        }
+
+        /* 브랜드 패밀리 카드 내부 로고 스타일 */
+        .card .brand-logo {
+            width: 100%; /* 카드 너비에 맞게 조절 */
+            max-width: 140px; /* 최대 너비 설정 (조절 가능) */
+            height: auto;
+            display: block; /* 블록 요소로 만들어 margin auto 적용 가능하게 */
+            margin: 0 auto 10px auto; /* 가운데 정렬 및 아래 여백 */
+            border-radius: 8px; /* 이미지가 너무 각져 보이지 않도록 살짝 둥글게 */
+        }
+
+        /* AGA:Face 로고의 경우 배경이 흰색에 가까워서 테두리를 추가해주는 것이 좋습니다. */
+        .card .brand-logo.agafq-logo {
+            border: 1px solid #e0e0e0; /* 연한 테두리 추가 */
         }
 
         /* 브랜드 패밀리 */
@@ -271,8 +287,9 @@
 
     <div class="brands">
         <div class="card">
+            <img src="images/agazon.png" alt="AGA:zon 로고" class="brand-logo">
             <div class="brand-tag">SERVICE MIRROR</div>
-            <div class="brand-name">AGA:zon</div>
+            <div class="brand-name">Agaz:on</div>
             <div class="brand-desc">
                 AI 서비스 선택과 활용을 돕는 마켓·가이드 플랫폼.
                 어떤 도구를 써야 할지 모를 때 방향을 제시하는 거울입니다.
@@ -280,6 +297,7 @@
         </div>
 
         <div class="card">
+            <img src="images/araface.jpg" alt="AGA:zon 로고" class="brand-logo">
             <div class="brand-tag">FAMILY MIRROR</div>
             <div class="brand-name">AGA:Face</div>
             <div class="brand-desc">
