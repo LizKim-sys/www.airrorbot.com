@@ -1,0 +1,6 @@
+# IDE·빌드
+.idea/
+*.iml
+.gradle/
+build/
+out/
